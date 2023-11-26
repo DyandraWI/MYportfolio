@@ -47,7 +47,7 @@ body{
    }
 
    /* navbar */
-   header{
+   /* header{
     position:fixed;
     top: 0;
     left: 0;
@@ -178,9 +178,11 @@ body{
         left: 0;
     }
 
-    }
+    } */
 
-/* #icon {
+/* Navbar Bootstrap */
+
+#icon {
     width: 19px;
     cursor: pointer;
     font-size: 3rem;
@@ -212,7 +214,7 @@ nav div ul li a.active {
 
 .navbar .nav-item .nav-link:hover{
     color: var(--main-color);
-} */
+}
 
 /* Home style */
 .home{
