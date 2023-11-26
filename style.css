@@ -52,11 +52,15 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .nav-menu{
@@ -874,6 +878,7 @@ background-size: var(--s) calc(var(--s) * 0.577);
 
     .hamburger{
         display: block;
+        padding-right: 3rem;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -886,16 +891,22 @@ background-size: var(--s) calc(var(--s) * 0.577);
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .header{
+        position:fixed;
+        top: 0;
+        width:100%;
+    }
+
     .nav-menu{
         position: fixed;
         left: -100%;
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #071952;
-        width: 99%;
+        width: 100%;
         text-align: center;
         transition: 0.3s;
+        background-color: var(--bg-color);
     }
 
     .nav-item{
